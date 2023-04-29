@@ -13,7 +13,7 @@ const PokemonPopup = ({ pokemon, visible, onClose }) => {
             <Text style={styles.text}>Height: {pokemon.height}</Text>
             <Text style={styles.text}>Weight: {pokemon.weight}</Text>
             <View style={styles.buttonContainer}>
-              <Button title="Close" onPress={onClose} />
+              <Button title="Close" onPress={onClose} color="green" />
             </View>
           </View>
         </View>
@@ -33,7 +33,7 @@ const PokemonPopup = ({ pokemon, visible, onClose }) => {
       padding: 20,
       borderRadius: 10,
       borderWidth: 2,
-      borderColor: '#008080',
+      borderColor: 'black',
     },
     title: {
       fontSize: 24,
@@ -46,7 +46,7 @@ const PokemonPopup = ({ pokemon, visible, onClose }) => {
       marginBottom: 10,
     },
     text: {
-      fontSize: 16,
+      fontSize: 20,
       marginBottom: 5,
     },
     buttonContainer: {

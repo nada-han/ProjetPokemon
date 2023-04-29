@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Image, ScrollView, Dimensions } from 'react-native';
 
+
 const { width } = Dimensions.get('window');
 
 const PokemonList = ({ onPress }) => {
@@ -57,34 +58,39 @@ const PokemonList = ({ onPress }) => {
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: '#f2f2f2',
+    backgroundColor: '#808080',
     paddingVertical: 10,
   },
   card: {
-    width: 150,
-    height: 200,
-    borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 3,
-    padding: 5,
-    marginRight: 10,
+    width: 160, 
+    height: 220, 
+    borderWidth: 2, 
+    borderColor: '#333', 
+    borderRadius: 10, 
+    padding: 10, 
+    marginRight: 15, 
+    alignItems: 'center', 
+    justifyContent: 'center', 
   },
   title: {
-    fontSize: 18,
+    fontSize: 20, 
     fontWeight: 'bold',
-    marginBottom: 5,
+    marginBottom: 10, 
+    textAlign: 'center', 
   },
   image: {
-    width: '100%',
-    height: 130,
+    width: '80%', 
+    height: 160, 
     resizeMode: 'contain',
   },
   typeTitle: {
-    fontSize: 20,
+    fontSize: 24, 
     fontWeight: 'bold',
-    marginLeft: 10,
-    marginTop: 10,
-    marginBottom: 5,
+    color : 'green',
+    marginLeft: 20, 
+    marginTop: 20, 
+    marginBottom: 10, 
+    textTransform: 'uppercase', 
   },
 });
 
